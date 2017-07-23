@@ -100,6 +100,18 @@ with open('rancher-compose.yml', 'r') as fp:
 os.remove('rancher-compose.yml')
 os.rename('rancher-compose.tmp', 'rancher-compose.yml')
 
+print(COMPOSEPATH +
+      " --url " + RURLAPI +
+      " --access-key " + RUSER +
+      " --secret-key " + RPASS +
+      " --project-name " + RENVNAME +
+      " --file docker-compose.yml " +
+      " --rancher-file rancher-compose.yml up -d" +
+      " --batch-size 1" +
+      " --confirm-upgrade" +
+      " --pull" +
+      " --force-upgrade " + RSERVICE)
+
 os.system(COMPOSEPATH +
       " --url " + RURLAPI +
       " --access-key " + RUSER +
