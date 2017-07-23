@@ -20,7 +20,7 @@ WINDOWS_FILENAME = "rancher-compose-windows-amd64-v"+ VERSION
 
 if len (sys.argv) < 6:
     print("ISH Labs - Rancher-Composer")
-    print("Usage: " + sys.argv[0] + " RANCHER_URL_API USER_API SECRET_API ENVIROMENT_NAME SERVICE_NAME")
+    print("Usage: " + sys.argv[0] + " URL_COMPOSECONFIG USER_API SECRET_API ENVIROMENT_NAME SERVICE_NAME")
     print("Example: " + sys.argv[0] + " https://rancher.server/v2-beta/projects/1a23711/stacks/1st294/composeconfig CF175922F68B31AA54C9 We8UTQ7Ky2VtEzhKOakq9bhCUWKE3gYvmPSZQa4A MyEnviroment app01")
     sys.exit (1)
 
